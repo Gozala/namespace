@@ -17,7 +17,7 @@
     "lib": "./lib",
     "test": "./test"
   },
-  "dependencies": {
+  "devDependencies": {
     "test": ">=0.0.10"
   },
   "main": "./lib/namespace.js",
