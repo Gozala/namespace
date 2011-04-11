@@ -26,7 +26,7 @@
     "teleport": ">=0.2.0"
   },
   "scripts": {
-    "test": "node test/all.js"
+    "test": "node test/test-namespace.js"
   },
   "licenses": [ { "type" : "MPL 1.1/LGPL 2.1/GPL 2.0"
     , "url" : "http://www.mozilla.org/MPL/"
