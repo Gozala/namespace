@@ -1,6 +1,6 @@
 { 
   "name": "namespace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library for defining namespaced properties.",
   "keywords": [ "namespace", "privates" ],
   "author": "Irakli Gozalishvili <rfobic@gmail.com>",
