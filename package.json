@@ -12,24 +12,18 @@
   "bugs": {
     "web": "http://github.com/Gozala/namespace/issues/"
   },
-  "directories": {
-    "doc": "./docs",
-    "lib": "./lib",
-    "test": "./test"
-  },
   "devDependencies": {
     "test": ">=0.0.10"
   },
-  "main": "./lib/namespace.js",
+  "main": "./namespace.js",
   "engines": {
-    "node": "0.4.x",
-    "teleport": ">=0.2.0"
+    "node": "0.4.x"
   },
   "scripts": {
     "test": "node test/test-namespace.js"
   },
-  "licenses": [ { "type" : "MPL 1.1/LGPL 2.1/GPL 2.0"
-    , "url" : "http://www.mozilla.org/MPL/"
-    }
-  ]
+  "licenses": [{
+    "type" : "MIT",
+    "url" : "http://jeditoolkit.com/LICENSE"
+  }]
 }

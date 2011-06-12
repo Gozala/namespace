@@ -1,6 +1,6 @@
 "use strict";
 
-var Namespace = require("namespace").Namespace;
+var Namespace = require("../namespace").Namespace;
 
 exports["test namsepace basics"] = function(assert) {
   var privates = new Namespace;
