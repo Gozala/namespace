@@ -1,10 +1,17 @@
+/* vim:set ts=2 sw=2 sts=2 expandtab */
+/*jshint undef: true es5: true node: true devel: true
+         forin: true latedef: false supernew: true */
+/*global define: true */
+
+(typeof define !== "function" ? function($){ $(require, exports, module); } : define)(function(require, exports, module, undefined) {
+
 "use strict";
 
 var Namespace = require("../namespace").Namespace;
 
 exports["test namsepace basics"] = function(assert) {
   var privates = new Namespace;
-  var object = { foo: function foo() { return "hello foo"; } }
+  var object = { foo: function foo() { return "hello foo"; } };
 
   assert.ok(!Namespace.hasNamespace(object, privates),
             "has no `privates` namespace");
@@ -51,12 +58,12 @@ exports["test namespace overlays"] = function(assert) {
 exports["test shared namespaces"] = function(assert) {
   var _ = new Namespace({
     hello: function hello() {
-      return 'hello world'
+      return 'hello world';
     }
   });
 
-  var f1 = { hello: 1 }
-  var f2 = { foo: 'foo' }
+  var f1 = { hello: 1 };
+  var f2 = { foo: 'foo' };
 
   assert.equal(_(f1).hello, _(f2).hello, "namespace can be shared");
   assert.notEqual(f1.hello, _(f1).hello, "shared namespace can overlay");
@@ -113,3 +120,5 @@ exports["test mixed namespaces"] = function(assert) {
 
 if (module == require.main)
   require("test").run(exports);
+
+});
