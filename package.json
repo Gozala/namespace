@@ -1,9 +1,10 @@
 { 
   "name": "namespace",
-  "version": "0.0.2",
+  "id": "namespace",
+  "version": "0.1.0",
   "description": "Library for defining namespaced properties.",
   "keywords": [ "namespace", "privates" ],
-  "author": "Irakli Gozalishvili <rfobic@gmail.com>",
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
   "repository": {
     "type": "git",
     "url": "git://github.com/Gozala/namespace.git",
