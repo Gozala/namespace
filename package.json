@@ -1,7 +1,7 @@
 { 
   "name": "namespace",
   "id": "namespace",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Library for defining namespaced properties.",
   "keywords": [ "namespace", "privates" ],
   "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
@@ -14,14 +14,14 @@
     "web": "http://github.com/Gozala/namespace/issues/"
   },
   "devDependencies": {
-    "test": ">=0.0.10"
-  },
-  "main": "./namespace.js",
-  "engines": {
-    "node": "0.4.x"
+    "test": ">=0.2.1",
+    "repl-utils": ">=1.0.3",
+    "swank-js": ">=0.0.3"
   },
   "scripts": {
-    "test": "node test/test-namespace.js"
+    "test": "node test/test-all.js && node --harmony_weakmaps test/test-all.js",
+    "repl": "node --harmony_weakmaps node_modules/repl-utils",
+    "swank": "node --harmony_weakmaps node_modules/swank-js"
   },
   "licenses": [{
     "type" : "MIT",
